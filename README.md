@@ -111,11 +111,11 @@ class ReactiveGapFollower(Node):
 
 ```
 │ Ángulo │       Velocidad        │
-│ < 0.06 rad  │ 8.2 m/s  (recta)         │
+│ < 0.06 rad  │ 8.5 m/s  (recta)         │
 │ < 0.10 rad  │ 7.2 m/s  (ligera curva)  │
 │ < 0.16 rad  │ 5.6 m/s  (curva suave)   │
 │ < 0.25 rad  │ 4.8 m/s  (curva media)   │
-│ ≥ 0.25 rad  │ 2.4 m/s  (curva cerrada) │
+│ ≥ 0.25 rad  │ 2.2 m/s  (curva cerrada) │
 ```
 
 ---
@@ -262,19 +262,18 @@ FINISH_RADIUS  = 1.5    # Radio de la zona de meta (metros)
 
 ### Mapa: Budapest
 
-| Métrica | Valor |
-|---|---|
-| Vueltas completadas sin colisión | 10 / 10 |
-| Mejor tiempo de vuelta | — |
-| Tiempo total (10 vueltas) | — |
-| Velocidad máxima en recta | 8.2 m/s |
+<img width="517" height="263" alt="Screenshot from 2026-07-04 15-01-54" src="https://github.com/user-attachments/assets/5f808c18-c439-4603-ae46-4f96ecc0a624" />
+
 
 ---
 
 ## 🗺️ Mapa utilizado
 
+<img width="1160" height="632" alt="Screenshot from 2026-07-04 13-14-45" src="https://github.com/user-attachments/assets/27eb7932-a6a6-4b80-9114-5b914002f026" />
+
+
 El controlador fue desarrollado y probado en el mapa **Budapest** del simulador F1Tenth, un circuito con curvas variadas que exige un buen balance entre velocidad y seguridad.
 
 ---
 
-*Proyecto desarrollado para el curso de Vehículos Autónomos.*
+*Proyecto desarrollado para el curso de Vehículos No Tripulados.*
