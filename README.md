@@ -1,6 +1,6 @@
 # 🏎️ F1Tenth — Follow The Gap Controller
 
-> **Curso:** Vehículos Autónomos  
+> **Curso:** Vehículos No Tripulados  
 > **Algoritmo:** Follow The Gap (FTG)  
 > **Simulador:** [F1Tenth Gym ROS2](https://github.com/f1tenth/f1tenth_gym_ros)  
 > **Mapa de prueba:** Budapest
