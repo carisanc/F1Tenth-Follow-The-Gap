@@ -273,7 +273,7 @@ FINISH_RADIUS  = 1.5    # Radio de la zona de meta (metros)
 
 El controlador fue desarrollado y probado en el mapa **Budapest** del simulador F1Tenth, un circuito con curvas variadas que exige un buen balance entre velocidad y seguridad.
 
-**Video de funcionamiento:** https://drive.google.com/file/d/1qw2YDRXNrtQyIL-T3RPTng79i4Ks0xFa/view?usp=sharing
+**Video de funcionamiento:** https://youtu.be/ILfKX3QPrOg
 
 ---
 
