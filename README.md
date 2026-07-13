@@ -261,7 +261,7 @@ ros2 topic list
 
 ***Video de funcionamiento***
 
-- Link: 
+- Link: https://youtu.be/eK8mGlzf1Xg?si=rpoa6shmL2zfKJg_
 
 ---
 
