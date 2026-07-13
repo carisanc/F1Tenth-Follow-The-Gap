@@ -251,15 +251,15 @@ ros2 topic list
 
 ## 📊 Resultados
 
-## Mapa editado
+# Mapa editado
 
 <img width="1160" height="632" alt="Screenshot from 2026-07-04 13-14-45" src="https://github.com/user-attachments/assets/24f893d9-6c78-4add-b007-df992c6e1a79" />
 
-## Resultados finales del carro principal
+# Resultados finales del carro principal
 
 <img width="517" height="263" alt="Screenshot from 2026-07-04 15-01-54" src="https://github.com/user-attachments/assets/b4f172a9-e9fa-49be-8756-4f741fb7b1bc" />
 
-## Video de funcionamiento
+# Video de funcionamiento
 
 - Link: 
 
