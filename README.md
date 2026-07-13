@@ -43,11 +43,8 @@ Los obstáculos estáticos se añadieron editando la imagen del mapa directament
 
 2. En GIMP, usar la herramienta **Lápiz** o **Pincel** con color **negro puro (#000000)** para pintar bloques rectangulares sobre la pista en las zonas deseadas. El simulador interpreta los píxeles negros como paredes infranqueables.
 
-3. Guardar el archivo sobreescribiendo el original (conservar el mismo nombre y formato `.png`).
+3. Guardar el archivo en formato .png.
 
-4. El archivo `.yaml` asociado no necesita modificación — solo lee la imagen:
-```
-~/F1Tenth-Repository/src/f1tenth_gym_ros/maps/Budapest_map.yaml
 ```
 
 > **Importante:** después de editar el mapa hay que recompilar y relanzar el simulador para que los cambios surtan efecto.
@@ -95,10 +92,8 @@ stheta: 0.0
 # opp starting pose on map
 sx1: 36.35
 sy1: 66.50
-stheta1: 0.0     # mismo ángulo que el carro principal → misma dirección de circulación
+stheta1: 3.14    
 ```
-
-> **Nota sobre `stheta1`:** Si se pone `3.14` (π radianes), el oponente arranca mirando en dirección contraria y circulará al revés. Usar `0.0` para que vaya en el mismo sentido que el carro principal.
 
 Los campos `sx1`, `sy1` ubican al oponente en un punto del circuito suficientemente alejado del carro principal para que no arranquen juntos en la misma curva.
 
@@ -146,10 +141,6 @@ speed = vel_recta - (vel_recta - vel_curva) * factor_giro
 ```
 
 Esto evita cambios bruscos de velocidad al salir de curvas, que causaban pérdida de control.
-
-### Por qué la burbuja de radio 52 permite el rebase
-
-Cuando el oponente está a ~3-4 m al frente, su perfil LiDAR ocupa ~20-30 índices angulares. Una burbuja de radio 52 lo tapa completamente incluyendo la rendija entre él y la pared lateral. El FTG no ve ningún gap por ese lado y elige automáticamente el hueco del lado contrario → **rebase natural sin lógica adicional**.
 
 ---
 
@@ -260,23 +251,17 @@ ros2 topic list
 
 ## 📊 Resultados
 
-### Mapa: Budapest con obstáculos estáticos
+## Mapa editado
 
-| Métrica | Valor |
-|---|---|
-| Obstáculos estáticos | 5 |
-| Vueltas completadas sin colisión | 10 / 10 |
-| Mejor tiempo de vuelta | — |
-| Tiempo total (10 vueltas) | — |
+<img width="1160" height="632" alt="Screenshot from 2026-07-04 13-14-45" src="https://github.com/user-attachments/assets/24f893d9-6c78-4add-b007-df992c6e1a79" />
 
-### Mapa: Budapest con obstáculo dinámico
+## Resultados finales del carro principal
 
-| Métrica | Valor |
-|---|---|
-| Carro oponente | 1 (FTG a ~40% velocidad) |
-| Vueltas completadas sin colisión | 10 / 10 |
-| Rebases completados | — |
-| Mejor tiempo de vuelta | — |
+<img width="517" height="263" alt="Screenshot from 2026-07-04 15-01-54" src="https://github.com/user-attachments/assets/b4f172a9-e9fa-49be-8756-4f741fb7b1bc" />
+
+## Video de funcionamiento
+
+- Link: 
 
 ---
 
