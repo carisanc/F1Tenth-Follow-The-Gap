@@ -25,7 +25,7 @@ BUBBLE_RADIUS       = 20
 SMOOTHING_WINDOW    = 7
 
 # Velocidades reducidas — este carro es el obstáculo dinámico
-SPEED_STRAIGHT      = 5.0    
+SPEED_STRAIGHT      = 4.0    
 SPEED_MEDIUM        = 2.0
 SPEED_CURVE         = 1.8
 SPEED_DANGER        = 0.8
